@@ -54,7 +54,7 @@ public class FaceBookReg {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//*[@name='websubmit']")).click();
         Thread.sleep(10000);
-        driver.quit();
+        driver.quit();//
 
     }
 
