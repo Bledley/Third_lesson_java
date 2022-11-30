@@ -75,8 +75,8 @@ public class HomeWorkTestNG {
     @Test(priority = 1)
     public void openRegPage(String browser) throws InterruptedException {
         homePage = new HomePage(getDriver(browser));
-        //Thread.sleep(3000);
-        homePage.btnContinue.click();// for EU internet (allow cookies)
+        Thread.sleep(3000);
+        //homePage.btnContinue.click();// for EU internet (allow cookies)
         homePage.openRegPageBtn.click();
         Thread.sleep(3000);
     }
@@ -105,6 +105,12 @@ public class HomeWorkTestNG {
         Assert.assertEquals(regPage.passFld.getAttribute("value"), pass);
         Assert.assertEquals(regPage.yearDD.getAttribute("value"), "1997");
         Assert.assertEquals(regPage.maleRadioBtn.isSelected(), true);
+    }
+
+    @Parameters("browser")
+    @Test(priority = 4)
+    public void checkRegisterBtn(){
+        Assert.assertEquals(regPage.registerBtn.isDisplayed(), true);
     }
 
 

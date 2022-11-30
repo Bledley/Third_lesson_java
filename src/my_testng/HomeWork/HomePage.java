@@ -11,6 +11,6 @@ public class HomePage extends BasePage {
     }
 
     public WebElement openRegPageBtn = driver.findElement(By.xpath("//*[@data-testid='open-registration-form-button']"));
-    public WebElement btnContinue = driver.findElement(By.xpath("//*[@data-cookiebanner='accept_button']"));
+    //public WebElement btnContinue = driver.findElement(By.xpath("//*[@data-cookiebanner='accept_button']"));
     //public WebElement btnAccept = driver.findElement(By.xpath("//*[@id='L2AGLb']"));
 }
