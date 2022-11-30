@@ -1,5 +1,5 @@
 import org.openqa.selenium.WebDriver;
 
-/*public class BasePage {
+public class BasePage {
     WebDriver driver = FaceBookReg.myDriver;
-}*/
+}

@@ -29,7 +29,7 @@ public class FaceBookReg {
         WebDriver driver = new FirefoxDriver();
         //myDriver = new FirefoxDriver();
         driver.get("https://www.facebook.com/");
-        //RegPage regPage = new RegPage();
+        //my_testng.HomeWork.RegPage regPage = new my_testng.HomeWork.RegPage();
         String name = "Johny";
         String gmail = mystring+"@gmail.com";
         Thread.sleep(3000);
